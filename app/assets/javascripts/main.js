@@ -8,6 +8,7 @@ booksApp.config(function($httpProvider) {
   $httpProvider.defaults.headers.common["X-CSRF-TOKEN"] = authToken
 })
 
-booksApp.controller('indexController', function($scope) {
-  $scope.welcome = 'hello world';
+
+booksApp.config(function($routeProvider) {
+  $routeProvider.when('/', {templateUrl: '/templates/books.html', controller: 'booksController'} )
 })
