@@ -11,6 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require angular.min
+//= require angular-route
+//= require angular-resource
+//= require main
