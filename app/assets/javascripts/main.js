@@ -8,7 +8,7 @@ booksApp.config(function($httpProvider) {
   $httpProvider.defaults.headers.common["X-CSRF-TOKEN"] = authToken
 })
 
-
-booksApp.config(function($routeProvider) {
+booksApp.config(function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true);
   $routeProvider.when('/', {templateUrl: '/templates/books.html', controller: 'booksController'} )
 })

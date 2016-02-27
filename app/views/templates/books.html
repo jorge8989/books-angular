@@ -1,5 +1,11 @@
 <h1>Books list</h1>
 <hr>
 <ul>
-  <li ng-repeat="book in books">{{book.title}} - {{book.author}}</li>
+  <li ng-repeat="book in books"><a href="" ng-click="get(book)">{{book.title}}</a></li>
 </ul>
+<div ng-show="selectedBook">
+<hr>
+  <label>book:</label><span> {{selectedBook.title}}</span>
+  <br>
+  <label>author:</label><span> {{selectedBook.author}}</span>
+</div>
